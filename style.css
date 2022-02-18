@@ -1,0 +1,79 @@
+header{
+    display: flex;
+    background-color: rgb(158, 160, 252);
+    height: 60px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+header img{
+    display: inline-block;    
+}
+header nav{
+    display: inline-block;
+}
+header nav a{
+    text-decoration: none;
+    color: rgb(12, 12, 122);
+    font-weight: bold;
+    padding: 20px 30px;
+}
+header nav a:hover{
+    background-color: aliceblue;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+header nav a.active{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+div#banner{
+    position: relative;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(90, 72, 72, 0.055)), url(https://i.guim.co.uk/img/media/477bec7f6df4136026ff7d2abe0ee3a0a4dcba9a/0_155_2768_1661/master/2768.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=d3a77b157ae840196b9f0c3654124128);
+    background-size: cover;
+}
+div#banner h1{
+    position: absolute;
+    padding-top: 30px;
+    color: white;
+    font-size: 100px;
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.178);
+    font-family: 'Staatliches', cursive;
+    padding-left: 30px;
+}
+div#banner img{
+    position: absolute;
+    padding-left: 70%;
+    max-height: 285px;
+    margin-top: 3%;
+}
+main{
+    display: grid;
+    grid-template: repeat(8,1fr) / repeat(5, 1fr);
+}
+main img.img-latest-new{
+    max-height: 100px;
+    grid-column: 1;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+main article.last-new{
+    grid-row: 2 / 4;
+    margin: 0px 25px;
+    border-radius: 10px;
+    background-color:khaki;
+}
+main article div a{
+    margin:35px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.171);
+}
+main article.main-homepage{
+    grid-area: 1 / 2 / 4 / 5;
+    position: relative;
+}
+main article.main-homepage .main-picture{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}

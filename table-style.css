@@ -1,0 +1,31 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .btn-know-more {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    /* padding: 12px 40px; */
+    border-radius: 50px;
+    transition: 0.5s;
+    /* margin-top: 30px; */
+    color: #fff;
+    background: #1e0e64;
+    margin: 40px;
+    padding: 40px;
+  }
