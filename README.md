@@ -3,4 +3,4 @@
 - Working in progress...
 - This is how it's looking:
 
-femenine-atm-football.netlify.app
+https://femenine-atm-football.netlify.app/
