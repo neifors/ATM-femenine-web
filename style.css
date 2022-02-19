@@ -5,6 +5,7 @@ header{
     align-items: center;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 header img{
     display: inline-block;    
@@ -22,6 +23,7 @@ header nav a:hover{
     background-color: aliceblue;
     font-size: 1.2em;
     border-radius: 10px;
+    text-decoration: none;
 }
 header nav a.active{
     background-color: aliceblue;
@@ -68,12 +70,71 @@ main article div a{
     margin:35px;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.171);
 }
-main article.main-homepage{
-    grid-area: 1 / 2 / 4 / 5;
-    position: relative;
+main div.center-img{
+    grid-area: 1 / 2 / 3 / 5;
+    background-image: url(https://as01.epimg.net/futbol/imagenes/2020/12/15/femenino/1608067308_177682_1608067407_noticia_normal_recorte1.jpg);
+    background-size: cover;
+    margin-top: 20px;
 }
-main article.main-homepage .main-picture{
-    position: absolute;
-    top: 20px;
-    left: 60px;
+
+.footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+.footer-basic ul {
+padding:0;
+list-style:none;
+text-align:center;
+font-size:18px;
+line-height:1.6;
+margin-bottom:0;
 }
+
+.footer-basic li {
+padding:0 10px;
+}
+
+.footer-basic ul a {
+color:inherit;
+text-decoration:none;
+opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+opacity:1;
+}
+
+.footer-basic .social {
+text-align:center;
+padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+font-size:24px;
+width:40px;
+height:40px;
+line-height:40px;
+display:inline-block;
+text-align:center;
+border-radius:50%;
+border:1px solid #ccc;
+margin:0 8px;
+color:inherit;
+opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+opacity:0.9;
+}
+
+.footer-basic .copyright {
+margin-top:15px;
+text-align:center;
+font-size:13px;
+color:#aaa;
+margin-bottom:0;
+}
+
+
