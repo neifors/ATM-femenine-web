@@ -54,28 +54,31 @@ main{
     display: grid;
     grid-template: repeat(8,1fr) / repeat(5, 1fr);
 }
-main img.img-latest-new{
-    max-height: 100px;
-    grid-column: 1;
-    margin-top: 45px;
-    margin-left: 25px;
+main div.ad-left{
+    grid-row-start: 2;
 }
-main article.last-new{
-    grid-row: 2 / 4;
-    margin: 0px 25px;
-    border-radius: 10px;
-    background-color:khaki;
+main div.ad-right{
+    grid-column-start: 5;
+    grid-row-start: 2;
 }
-main article div a{
-    margin:35px;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.171);
+main div div img{
+    width: 250px;
+    height: 200px;
 }
-main div.center-img{
-    grid-area: 1 / 2 / 3 / 5;
-    background-image: url(https://as01.epimg.net/futbol/imagenes/2020/12/15/femenino/1608067308_177682_1608067407_noticia_normal_recorte1.jpg);
-    background-size: cover;
-    margin-top: 20px;
+
+
+.main-img{
+    grid-area: 1 / 2 / 3 / 5 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.box img{
+    width: 100%;
+    height: auto;
+}
+
 
 .footer-basic {
     padding:40px 0;
