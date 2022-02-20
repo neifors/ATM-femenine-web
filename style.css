@@ -1,3 +1,4 @@
+/*------------- HEADER -------------*/
 header{
     display: flex;
     background-color: rgb(28, 30, 121);
@@ -31,6 +32,10 @@ header nav a.active{
     background-color:darkred ;
     border-radius: 8px;
 }
+
+
+
+/*------------- BANNER -------------*/
 div#banner{
     position: relative;
     height: 50vh;
@@ -52,10 +57,20 @@ div#banner img{
     max-height: 285px;
     margin-top: 3%;
 }
+
+
+
+/*------------- MAIN -------------*/
+
+
+
 main{
     display: grid;
     grid-template: repeat(8,1fr) / repeat(5, 1fr);
 }
+
+
+/*------------- -> ADS -------------*/
 div.ad-left{
     grid-row-start: 2;
 }
@@ -69,31 +84,57 @@ div.ad-img img{
 }
 
 
+/*-------------  -> LAST NEW IMG -------------*/
 .main-img{
     grid-area: 1 / 2 / 3 / 5 ;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .box{
     width: 100%;
     height: 100%;
 }
-
 .box img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/*------------- CALSIFICATION TABLE -------------*/
+table.clasification-table {
+    grid-area: 3 / 2 / 4 / 5;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 3px solid lightcoral;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    font-size: 1.3em;
+}
+tr.atletico {
+    background-color: #dddddd;
+}
+.icon{
+    display: inline-block;
+    height: 1.6rem;
+    vertical-align: middle;
+} 
 
+
+
+
+/*------------- FOOTER -------------*/
 .footer-basic {
     padding:40px 0;
     background-color:#ffffff;
     color:#4b4c4d;
-  }
-  
+  } 
 .footer-basic ul {
     padding:0;
     list-style:none;
@@ -102,26 +143,21 @@ div.ad-img img{
     line-height:1.6;
     margin-bottom:0;
 }
-
 .footer-basic li {
     padding:0 10px;
 }
-
 .footer-basic ul a {
     color:inherit;
     text-decoration:none;
     opacity:0.8;
 }
-
 .footer-basic ul a:hover {
     opacity:1;
 }
-
 .footer-basic .social {
     text-align:center;
     padding-bottom:25px;
 }
-
 .footer-basic .social > a {
     font-size:24px;
     width:40px;
@@ -135,11 +171,9 @@ div.ad-img img{
     color:inherit;
     opacity:0.75;
 }
-
 .footer-basic .social > a:hover {
     opacity:0.9;
 }
-
 .footer-basic .copyright {
     margin-top:15px;
     text-align:center;
@@ -149,30 +183,3 @@ div.ad-img img{
 }
 
 
-table.clasification-table {
-    grid-area: 3 / 2 / 4 / 5;
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    border-top: 3px solid lightcoral;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-th {
-    font-size: 1.3em;
-}
-
-tr.atletico {
-    background-color: #dddddd;
-}
-
-.icon{
-    display: inline-block;
-    height: 1.6rem;
-    vertical-align: middle;
-} 
